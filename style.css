@@ -1,8 +1,23 @@
 body{
     background-color: #333333;
+
+    padding: 0;
+    margin: 0;
 }
 
-.container{
+
+#page{
+    display: flex;
+}
+
+.menu-item{
+    background-color: #555599;
+    padding: 30px;
+    color: white;
+    font-size: 2rem;
+}
+
+#container{
     display: flex;
     flex-wrap: wrap;
 }
@@ -11,8 +26,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     color: white;
     font-size: 3rem;
     transition: all 300ms;
@@ -22,3 +37,29 @@ body{
 .sections:hover{
     background-color: black;
 }
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    #menu{
+        display: none;
+    }
+
+    #container{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .sections{
+        width: 100%;    
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
